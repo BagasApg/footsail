@@ -49,9 +49,22 @@
             <div class="card">
                 <div class="card-body">
                     <h6 class="fw-bold">Detail Booking</h6>
-                    <div class="d-flex justify-content-between">
-                        <p>Lapangan<br>hi</p>
-                        <p>Rp{{ number_format($field->price) }}</p>
+                    <div class="booking-details mb-3">
+
+                        <div class="d-flex justify-content-between">
+                            <div class="">
+                                <p style="margin-bottom: -5px">Lapangan</p>
+                                <p class="text-secondary mb-0">(Rp{{ number_format($field->price) }} x 2 jam)</p>
+                            </div>
+                            <p>Rp{{ number_format($field->price) }}</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="">
+                                <p style="margin-bottom: -5px">Lapangan</p>
+                                <p class="text-secondary mb-0">(2 jam)</p>
+                            </div>
+                            <p>Rp{{ number_format(25000) }}</p>
+                        </div>
                     </div>
                     <a href="" class="btn btn-primary w-100">Purchase</a>
                 </div>
